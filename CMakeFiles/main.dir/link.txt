@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/activation_function.cpp.o CMakeFiles/main.dir/src/mlp.cpp.o  -o main 

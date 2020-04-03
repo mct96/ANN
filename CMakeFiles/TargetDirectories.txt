@@ -1,3 +1,0 @@
-/home/matheusc/Documents/Codes/NaturalComputing/NeuralNetwork/CMakeFiles/rebuild_cache.dir
-/home/matheusc/Documents/Codes/NaturalComputing/NeuralNetwork/CMakeFiles/edit_cache.dir
-/home/matheusc/Documents/Codes/NaturalComputing/NeuralNetwork/CMakeFiles/main.dir

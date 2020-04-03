@@ -63,7 +63,7 @@ class network_t:
             for i in range(self.layout[l]):
                 temp = []
                 for k in range(self.layout[l-1] + 1):
-                    temp.append(.5)
+                    temp.append(random())
                 weights.append(temp)
 
             self.weight.append(weights)
@@ -173,11 +173,16 @@ class network_t:
 net = network_t([2, 2, 1])
 net.initilizalize()
 
-net.print()
-net.train([1, 1], [0], 0.2)
-net.train([1, 0], [1], 0.2)
-net.train([0, 0], [0], 0.2)
-net.train([0, 1], [1], 0.2)
-net.print()
+print("Training...")
+for i in range(10000):
+    a = randint(0, 1)
+    b = randint(0, 1)
+    y = xor(a, b)
+    net.train([a, b], [y], .5)
 
 
+print("\n\nPredicting...")
+print("\tpredicted: %.3lf expected %d"%(net.predict([1, 1])[0], 0))
+print("\tpredicted: %.3lf expected %d"%(net.predict([1, 0])[0], 1))
+print("\tpredicted: %.3lf expected %d"%(net.predict([0, 0])[0], 0))
+print("\tpredicted: %.3lf expected %d"%(net.predict([0, 1])[0], 1))
