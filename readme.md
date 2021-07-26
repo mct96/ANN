@@ -15,7 +15,7 @@ Activations functions:
     //      You can add other just overring the base class.
 ```
 
-Creating the network:
+Creating a network:
 ```c++
     // Layout: 1 × 32 × 1.
     // Activation Functions: arctan, arctan, respectively.
